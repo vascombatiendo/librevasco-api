@@ -17,15 +17,6 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'local';
 
 let urlDB;
 
-if ( process.env.NODE_ENV === 'local' ) {
-
-  urlDB = 'mongodb://localhost:27017/bibliovasca';
-
-} else {
-
-  urlDB = process.env.MONGO_URI;
-  console.log(urlDB);
-
-}
+urlDB = 'mongodb://mongo:27017/bibliovasca';
 
 process.env.URLDB = urlDB;
